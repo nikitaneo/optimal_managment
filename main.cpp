@@ -236,7 +236,6 @@ bool test_2()
 
 		for( unsigned i = 0; i < TIME_GRID_SIZE; i++ )
 		{
-			// b = ( 0, x[i]/tau + f(jh, t), ..., nu * p(t) )
 			b[0] = (f_discrete[i][0] + x[0] / tau) * h * h / (2.0 * a * a);
 			for (unsigned j = 1; j < POS_GRID_SIZE - 1; j++)
 			{
